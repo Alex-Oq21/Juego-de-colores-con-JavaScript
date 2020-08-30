@@ -32,3 +32,30 @@ for (i = 0; i < squares.length; i++) {
         }
     })
 };
+
+function changeColors(color) {
+    for (i = 0; i <= squares.length; i++) {
+        squares[i].style.backgroundColor = color;
+    }
+}
+
+function pickColor() {
+    var random = Math.floor(Math.random() * colors.length);
+    console.log("pickColor");
+    return colors[random];
+}
+
+function randomColors() {
+    var r = Math.floor(Math.random() * 256);
+    var g = Math.floor(Math.random() * 256);
+    var b = Math.floor(Math.random() * 256);
+    return "rgb(" + r + ", " + b + ", " + g + ")";
+}
+
+function generateRandomColors(num) {
+    var arr = [];
+    for (i = 0; i < num; i++) {
+        arr.push(randomColors());
+    }
+    return arr;
+}
