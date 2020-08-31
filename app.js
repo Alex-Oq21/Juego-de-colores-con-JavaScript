@@ -9,7 +9,6 @@ var header = document.querySelector("#header");
 var colors = generateRandomColors(6);
 pickedColor = pickColor();
 
-
 systemMessageDisplay.innerHTML = pickedColor;
 for (i = 0; i < squares.length; i++) {
     //Aplica color a los cuadros
@@ -32,6 +31,18 @@ for (i = 0; i < squares.length; i++) {
         }
     })
 };
+
+//Reiniciar juego
+resetButton.addEventListener('click', function() {
+    colors = generateRandomColors(6);
+    pickedColor = pickColor();
+    systemMessageDisplay.innerHTML = pickedColor;
+    header.style.backgroundColor = 'steelblue';
+    userMessageDisplay = '';
+    for (i = 0; i <= squares.length; i++) {
+        squares[i].style.backgroundColor = colors[i];
+    }
+})
 
 function changeColors(color) {
     for (i = 0; i <= squares.length; i++) {
