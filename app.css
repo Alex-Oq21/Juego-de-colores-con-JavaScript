@@ -2,6 +2,7 @@ body {
     background-color: #232323;
     margin: 0;
     font-family: "Montserrat", "Avenir";
+    color: black;
 }
 
 h1 {
@@ -16,7 +17,7 @@ h1 {
 }
 
 h3 {
-    color: #fff;
+    color: black;
 }
 
 #container {
@@ -37,11 +38,11 @@ h3 {
 }
 
 #default-code {
-    color: #fff;
+    color: black;
 }
 
 #user-code {
-    color: #fff;
+    color: black;
 }
 
 #stripe {

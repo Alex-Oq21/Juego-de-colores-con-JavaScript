@@ -4,6 +4,7 @@
 <head>
     <title>Color Game</title>
     <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
@@ -15,10 +16,10 @@
     </h1>
 
     <div id="stripe">
-        <button id="reset">Nuevos colores</button>
+        <button id="reset" class="btn btn-outline-primary">Nuevos colores</button>
         <span id="message"></span>
-        <button class="easyBtn">Fácil</button>
-        <button class="hardBtn selected">difícil</button>
+        <button type="button" class="btn btn-outline-success">Fácil</button>
+        <button class="btn btn-outline-danger" type="button">difícil</button>
     </div>
 
     <h3>Selección actual: <span id="default-code"></span></h3>
